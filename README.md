@@ -10,7 +10,6 @@ This is a solution to the [Social links profile challenge on Frontend Mentor](ht
   - [Links](#links)
 - [My process](#my-process)
   - [Built with](#built-with)
-  - [What I learned](#what-i-learned)
   - [Continued development](#continued-development)
   - [Useful resources](#useful-resources)
 - [Author](#author)
@@ -62,8 +61,8 @@ Use this section to outline areas that you want to continue focusing on in futur
 
 ## Author
 
-- Frontend Mentor - [@iamitshaw-1998](https://www.frontendmentor.io/profile/iamitshaw-1998)
-- Twitter - [@AmitShaw1998](https://x.com/AmitShaw1998)
+- Frontend Mentor - [https://www.frontendmentor.io/profile/iamitshaw-1998](https://www.frontendmentor.io/profile/iamitshaw-1998)
+- Twitter - [https://x.com/AmitShaw1998](https://x.com/AmitShaw1998)
 
 **Note: Delete this note and add/remove/edit lines above based on what links you'd like to share.**
 

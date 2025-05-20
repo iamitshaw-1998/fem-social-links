@@ -1,4 +1,3 @@
-@import url("https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,100..900&display=swap");
 :root {
     --color-green-600: hsl(75, 94%, 57%);
     --color-white-100: hsl(0, 0%, 100%);
@@ -10,12 +9,10 @@
   background-color: var(--color-green-600);
   color: var(--color-grey-900);
 } */
-body {
+main {
     font-family: "Inter", sans-serif;
     background-color: var(--color-grey-900);
     color: var(--color-white-100);
-}
-main {
     min-height: 100vh;
     display: flex;
     flex-direction: column;
@@ -23,51 +20,54 @@ main {
     align-items: center;
 }
 .social-container {
+    max-width: clamp(15rem, 80vw, 20rem);
     background-color: var(--color-grey-800);
-    padding: 0.935rem;
-    border-radius: 0.75rem;
+    padding: 1.5em;
+    border-radius: 0.75em;
     text-align: center;
 }
-@media screen and (18rem <= width <= 20rem) {
-    .social-container {
-        min-width: min(80%, 18rem);
+
+@media screen and (width < 15rem) {
+    main {
+        justify-content: flex-start;
     }
-}
-@media screen and (width > 20rem) {
     .social-container {
-        width: 18rem;
+        min-width: 100%;
+        border-radius: 0;
     }
 }
 .avatar__image {
     max-width: 6rem;
     border-radius: 50%;
     margin-inline: auto;
-    margin-bottom: 1.5rem;
+    margin-block-end: 1.5rem;
 }
 .avatar__name {
-    font-size: 1.5rem;
-    margin-bottom: 0.5rem;
+    font-size: 1.5em;
+    margin-block-end: 0.5em;
 }
 .avatar__address-location {
     color: var(--color-green-600);
     font-size: 0.875rem;
     font-style: normal;
-    margin-bottom: 0.825rem;
+    margin-block-end: 0.825rem;
 }
 .avatar__job-description {
     font-size: 0.75rem;
-    font-weight: 300;
-    margin-bottom: 1.75rem;
+    font-weight: 400;
+    margin-block-end: 1.75em;
 }
 .social-link-wrapper {
+    display: flex;
+    flex-direction: column;
     list-style-type: none;
     padding: 0;
     max-width: min(100%, 20rem);
 }
 .social-link {
     background-color: var(--color-grey-700);
-    margin-top: 0.825rem;
-    font-weight: 100;
+    margin-block-start: 0.825rem;
+    font-weight: 500;
     border-radius: 0.5rem;
 }
 .social-link__url {
@@ -80,7 +80,7 @@ main {
 .social-link__url:focus,
 .attribution a:focus {
     outline: 1px solid var(--color-green-600);
-    outline-offset: 2px;
+    /* outline-offset: 2px; */
 }
 
 .social-link__url:hover {
@@ -93,14 +93,15 @@ main {
 
 .attribution__wrapper {
     text-align: center;
+    margin-block-start: 1.5em;
 }
 
 .attribution {
-    font-size: 13px;
+    font-size: 0.75em;
 }
-.attribution a {
+.attribution__link {
     color: var(--color-green-600);
 }
-.attribution a:hover {
+.attribution__link:hover {
     color: var(--color-white-100);
 }

@@ -7,7 +7,7 @@
         <meta name="keywords" content="Frontend Mentor, HTML, CSS" />
         <meta
             name="description"
-            content="Frontend Mentor | Social links profile Challenge"
+            content="Frontend Mentor | Social Links Profile Challenge"
         />
         <link
             rel="icon"
@@ -25,23 +25,26 @@
                 <figure class="avatar">
                     <div
                         class="avatar__image-wrapper"
-                        aria-labelledby="Jessica Randall"
+                        aria-labelledby="avatar-label"
+                        aria-describedby="avatar-description"
                     >
                         <img
                             class="avatar__image"
-                            src="./public/avatar-jessica.jpeg"
+                            src="./public/profile-image.webp"
                             alt="Avatar of Jessica"
                         />
                     </div>
                     <figcaption>
-                        <div id="Jessica Randall" class="avatar__name">
-                            Jessica Randall
-                        </div>
+                        <h1 id="avatar-label" class="avatar__name">
+                            Amit Shaw
+                        </h1>
                         <address class="avatar__address-location">
-                            London, United Kingdom
+                            Arwal (Bihar), India
                         </address>
-                        <q class="avatar__job-description"
-                            >Front-end developer and avid reader.</q
+                        <q
+                            id="avatar-description"
+                            class="avatar__job-description"
+                            >Front-end software developer and avid reader.</q
                         >
                     </figcaption>
                 </figure>
@@ -83,19 +86,23 @@
                     </li>
                 </ul>
             </section>
+            <footer class="attribution__wrapper">
+                <p class="attribution">
+                    Challenge by
+                    <a
+                        class="attribution__link"
+                        href="https://www.frontendmentor.io?ref=challenge"
+                        target="_blank"
+                        >Frontend Mentor</a
+                    >. Coded by
+                    <a
+                        class="attribution__link"
+                        href="https://github.com/iamitshaw-1998/fem-social-links"
+                        target="_blank"
+                        >Amit Shaw</a
+                    >.
+                </p>
+            </footer>
         </main>
-        <footer class="attribution__wrapper">
-            <p class="attribution">
-                Challenge by
-                <a
-                    href="https://www.frontendmentor.io?ref=challenge"
-                    target="_blank"
-                    >Frontend Mentor</a
-                >. Coded by
-                <a href="https://github.com/iamitshaw-1998/fem-social-links"
-                    >Amit Shaw</a
-                >.
-            </p>
-        </footer>
     </body>
 </html>
