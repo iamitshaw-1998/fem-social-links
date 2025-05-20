@@ -1,0 +1,98 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,100..900&display=swap");
+
+:root {
+    --color-green-600: hsl(75, 94%, 57%);
+    --color-white-100: hsl(0, 0%, 100%);
+    --color-grey-700: hsl(0, 0%, 20%);
+    --color-grey-800: hsl(0, 0%, 12%);
+    --color-grey-900: hsl(0, 0%, 8%);
+}
+
+/* *::selection {
+  background-color: var(--color-green-600);
+  color: var(--color-grey-900);
+} */
+body {
+    font-family: "Inter", sans-serif;
+    background-color: var(--color-grey-900);
+    color: var(--color-white-100);
+}
+main {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.social-container {
+    background-color: var(--color-grey-800);
+    padding: 0.935rem;
+    border-radius: 0.75rem;
+    text-align: center;
+}
+
+.avatar__image {
+    max-width: 6rem;
+    border-radius: 50%;
+    margin-inline: auto;
+    margin-bottom: 1.5rem;
+}
+.avatar__name {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+.avatar__address-location {
+    color: var(--color-green-600);
+    font-size: 0.875rem;
+    font-style: normal;
+    margin-bottom: 0.825rem;
+}
+.avatar__job-description {
+    font-size: 0.75rem;
+    font-weight: 300;
+    margin-bottom: 1.75rem;
+}
+.social-link-wrapper {
+    list-style-type: none;
+    padding: 0;
+}
+.social-link {
+    background-color: var(--color-grey-700);
+    margin-top: 0.825rem;
+    font-weight: 100;
+    border-radius: 0.5rem;
+}
+.social-link__url {
+    padding: 0.935rem;
+    text-align: center;
+    display: block;
+    color: var(--color-white-100);
+    text-decoration: none;
+}
+.social-link__url:focus,
+.attribution a:focus {
+    outline: 1px solid var(--color-green-600);
+    outline-offset: 2px;
+}
+
+.social-link__url:hover {
+    background-color: var(--color-green-600);
+    color: var(--color-grey-700);
+    font-weight: 600;
+    border-radius: 0.5rem;
+    transition: all 0.125s linear;
+}
+
+.attribution__wrapper {
+    text-align: center;
+}
+
+.attribution {
+    font-size: 13px;
+}
+.attribution a {
+    color: var(--color-green-600);
+}
+.attribution a:hover {
+    color: var(--color-white-100);
+}
